@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html
+dir="ltr"
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Template Base SNP</title>
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+    rel="stylesheet"
+    />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #000000;
+            color: #677379;
+            font-family: kanit, geneva,sans-serif;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .header{
+            background-color: #EDF0F2;
+        }
+
+        .content{
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 117px 0;
+        }
+
+        .logo{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+
+        .logo img{
+            max-height: 45px;
+            max-width: 182px;
+        }
+
+        .logo a{
+            color: #323739;
+        }
+
+        .decline{
+            align-items: center;
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .decline h1{
+            color: #687479;
+            font-size: 60px;
+            font-weight: 100;
+        }
+        .decline h1 span{
+            font-weight: 600;
+        }
+
+        .section{
+            background-color: #FFFFFF;
+        }
+
+        .section h2{
+
+        }
+
+        .section .content p{
+            margin-top: 40px;
+        }
+
+        .green{
+            color: #7FE786;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="content">
+                <div class="logo">
+                    <img src="https://ffmrcta.stripocdn.email/content/guids/CABINET_4360f74755fdbb22fbe9b84bd23bf98e9591e669cc8f96a8239724413141a671/images/image_1.png" alt="Logo Resolve" title="Logo Resolve">
+                    <p>
+                        <span style="color: #677379; font-size: 16px; font-weight: 300;">{{data}}</span> <br>
+                        <a href="">visualizar na web</a>
+                    </p>
+                </div>
+                <div class="decline">
+                    <svg width="83" height="87" viewBox="0 0 83 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64.0406 85.8029L49.6225 80.0676C49.0581 80.1917 48.5193 80.2662 48.0062 80.3655C25.3784 83.8166 4.11039 68.895 0.518679 46.9718C-3.07303 25.0487 12.3713 4.49107 34.9991 1.01514C57.6269 -2.46078 78.8949 12.4857 82.4866 34.384C84.7443 48.1636 79.4593 62.0673 68.5303 71.1543L70.1722 81.1104C70.557 83.469 68.8894 85.7035 66.4522 86.076C65.6312 86.1753 64.8103 86.1008 64.0406 85.8029ZM9.36968 45.6311C12.2174 62.7873 28.8675 74.5061 46.6208 71.7999C47.3392 71.7005 48.1088 71.5516 49.0324 71.3281C49.9303 71.1295 50.9052 71.204 51.7519 71.5267L60.0898 74.8537L59.2944 70.0371C59.0379 68.4481 59.7049 66.8591 61.039 65.8908C75.4315 55.463 78.3562 35.7247 67.581 21.7962C56.8059 7.86768 36.3845 5.06211 21.992 15.4651C12.3457 22.4914 7.4712 34.0861 9.36968 45.6311Z" fill="#687479"/>
+                        <path d="M46.6223 40.8622L53.7287 33.9575C55.4112 32.2984 55.4112 29.639 53.7036 28.0043C52.0212 26.3696 49.2841 26.3696 47.6017 28.0043L40.4953 34.909L33.3889 28.0043C31.6813 26.3696 28.9443 26.3696 27.2618 28.0287C25.5794 29.6634 25.5794 32.3228 27.2618 33.9819L34.3682 40.8866L27.2618 47.7913C25.5794 49.4504 25.5794 52.1098 27.2618 53.7445C28.9443 55.3792 31.7065 55.3792 33.3889 53.7445L40.4953 46.8398L47.6017 53.7445C49.2841 55.4036 52.0463 55.4036 53.7287 53.7445C55.4112 52.0854 55.4363 49.426 53.7287 47.7913L46.6223 40.8622Z" fill="#687479"/>
+                    </svg>                        
+                    <h1>Proposta <span>declinada.</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <h2>Prezado(a) <span class="green">{{name}},</span></h2>
+                <p>Sua proposta para o título</p>
+                <div class="title">
+                    DUPLICATA DE VENDA MERCANTIL
+                </div>
+                <p><span>Foi declinada.</span> Confira todos os detalhes</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

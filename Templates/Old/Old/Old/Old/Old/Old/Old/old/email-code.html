@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html
+dir="ltr"
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Template Base SNP</title>
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+    rel="stylesheet"
+    />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: #677379;
+            font-family: kanit, geneva,sans-serif;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .container{
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .header{
+            background-color: #EDF0F2;
+            max-height: 424px;
+        }
+
+        .content{
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 117px 0 0 0;
+        }
+
+        .logo-container{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+
+        img.logo{
+            max-height: 45px;
+            max-width: 182px;
+        }
+
+        .logo-container a{
+            color: #323739;
+        }
+
+        .banner{
+            margin-top: 43px;
+        }
+
+        .banner img{
+            max-width: 100%;
+        }
+
+        .section{
+            background-color: #FFFFFF;
+            color: #323739;
+            padding: 40px 0;
+        }
+
+        .section h1{
+            font-size: 38px;
+        }
+
+        .section .content p{
+            margin-top: 40px;
+        }
+
+        .code{
+            background-color: #EDF0F2;
+            border: #323739 solid 1px;
+            border-radius: 20px;
+            margin: 40px 0;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .code span{
+            color: #323739;
+            font-size: 116px;
+            font-weight: 600;
+        }
+
+        .section .alert{
+            font-size: 16px;
+            max-width: 80%;
+        }
+
+        .footer{
+            background-color: #293033;
+        }
+
+        .footer h3{
+            color: #FFFFFF;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .footer p{
+            margin-top: 40px;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .ineo img{
+            width: 120px;
+        }
+
+        .social img{
+            margin-left: 10px;
+            width: 40px;
+        }
+        
+        .green{
+            color: #7FE786;
+        }
+
+        .bold{
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px){
+            .header{
+                max-height: 200px;
+            }
+            .content{
+                margin: 0 auto;
+                max-width: 90%;
+                padding: 50px 0 0 0;
+            }
+
+            img.logo{
+                max-width: 120px;
+            }
+
+            .logo-container a{
+                color: #323739;
+                font-size: 1rem;
+            }
+
+            .logo-container p{
+                line-height: 1rem;
+            }
+
+            .section{
+                padding: 60px 0;
+            }
+
+            .section h1{
+                font-size: 30px;
+            }
+
+            .section .content p{
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+            .code{
+                margin: 30px 0;
+                padding: 20px 0;
+            }
+
+            .code span{
+                font-size: 50px;
+            }
+
+            .section p.alert{
+                font-size: 16px;
+                max-width: 90%;
+            }
+
+            .footer h3{
+                display: inline-flex;
+                font-size: 18px;
+                font-weight: 200;
+            }
+
+            .footer p{
+                margin-top: 20px;
+                font-size: 16px;
+            }
+
+            .footer .email{
+                margin-left: 30px;
+            }
+
+            .icons{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 60px 0;
+            }
+
+            .ineo img{
+                width: 90px;
+            }
+
+            .social img{
+                margin-left: 10px;
+                width: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="content">
+                <div class="logo-container">
+                    <img src="https://ffmrcta.stripocdn.email/content/guids/CABINET_4360f74755fdbb22fbe9b84bd23bf98e9591e669cc8f96a8239724413141a671/images/image_1.png" class="logo" alt="Logo Resolve" title="Logo Resolve">
+                    <p>
+                        <span style="font-size: 16px;">{{data}}</span> <br>
+                        <a href="">visualizar na web</a>
+                    </p>
+                </div>
+                <div class="banner">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/todolist-e1acf.appspot.com/o/Component%203.png?alt=media&token=4f0a5fdd-adbf-4fbe-b1ba-e4514d1e0f8b" alt="Seu código de verificação chegou">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <h1>Olá, <span class="green">{{name}}</span></h1>
+                <p>Para validarmos o seu acesso no Resolve com segurança,<br> use o <span class="bold">código abaixo</span> para acessar as suas informações.</p>
+                <div class="code">
+                    <span>
+                        {5 B E 3 D F}
+                    </span>
+                </div>
+                <p>Este código é <span class="bold">único e de uso exclusivo</span> seu, para validar o seu acesso ao Resolve. <br>Nunca compartilhe este código com ninguém.</p>
+                <hr style="border: #D9E6F4 1px solid; margin: 40px 0;">
+                <p class="alert">
+                    Se você não reconhece esta solicitação, ela pode ter sido solicitada por engano. Entre em contato com nosso atendimento através dos canais: telefone <span class="bold">(11) 3112 0698</span> ou através do email <span class="bold">consultaprotesto@cartoriosdeprotesto.org.br</span>
+                </p>
+                <p class="alert">
+                    Se precisar, a <span class="bold">RESOLVE CENPROT</span> está aqui para te ajudar.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <img src="https://stineositeprod01.blob.core.windows.net/emails/logo-white.png"
+                class="logo" alt="Logo Resolve" title="Logo Resolve">
+                <hr style="border: #333C40 1px solid; margin: 40px 0;">
+                <h3><span class="green" style="margin-right: 10px;">Contato:</span> (11) 3112-0698</h3>
+                <h3><span class="green">Email:</span> <span class="email" style="word-break: break-all;">consultaprotesto@cartoriosdeprotesto.org.br</span></h3>
+                <p>Resolve é uma iniciativa da CENPROT/IEPTB (Instituto de Estudos de Protesto de Títulos do Brasil), respaldada pelas Leis Federais nº 13.775/2018 e nº 14.711/2023.</p>
+                <p>Oferecemos soluções confiáveis para negociar, quitar dívidas e cancelar pendências em todo o Brasil, inclusive protestos.</p>
+                <p>Copyright IPTB-BR - Todos os direitos reservados.</p>
+                <p>
+                    <span class="bold">IEPTB-BR - Seção São Paulo</span><br>
+                    Rua da Quitanda, nº 16, 1º andar, Centro, São Paulo/SP, CEP 01012-001<br>
+                    CNPJ: nº 45.876.117/0001-71<br>
+                </p>
+
+                <div class="icons">
+                    <div class="ineo">
+                        <img src="https://stineositeprod01.blob.core.windows.net/emails/ineo.png" alt="Ineo">
+                        <img src="https://stineositeprod01.blob.core.windows.net/emails/ieptb.png" style="margin-left: 20px;" alt="Cartórios de Protesto">
+                    </div>
+                    <div class="social">
+                        <img src="https://stineositeprod01.blob.core.windows.net/emails/facebook-white.png" alt="Facebook">
+                        <img src="https://stineositeprod01.blob.core.windows.net/emails/instagram-white.png" alt="Instagram">
+                        <img src="https://stineositeprod01.blob.core.windows.net/emails/linkedin-white.png" alt="Linkedin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

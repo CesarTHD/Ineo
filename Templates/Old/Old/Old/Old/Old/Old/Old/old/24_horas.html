@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>24 horas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #677379;
+            font-family: kanit, geneva, sans-serif;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 840px;
+        }
+
+        .header {
+            background-color: #F4DC6D;
+        }
+
+        .title{
+            display: flex;
+            gap: 43px;
+            align-items: center;
+            padding-bottom: 55px;
+        }
+
+        .title h1{
+            color: #000;
+            font-weight: 100;
+            font-size: 60px;
+            white-space: nowrap;
+        }
+
+        .logo-container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 117px 0;
+            text-align: right;
+        }
+
+        img.logo {
+            max-height: 45px;
+            max-width: 182px;
+        }
+
+        .logo-container a {
+            color: #323739;
+        }
+
+        .section {
+            background-color: #FFFFFF;
+            color: #323739;
+            padding: 40px 0;
+        }
+
+        .section .hello{
+            font-size: 38px;
+            font-weight: 600;
+        }
+
+        .section .content .intro{
+            font-size: 24px;
+        }
+
+        .section .content p{
+            color: #323739;
+            margin-top: 40px;
+        }
+
+        .section .alert {
+            color: #858f94;
+            font-size: 19px;
+        }
+
+        .steps{
+            margin-top: 80px;
+        }
+
+        .steps .steps-title{
+            align-items: center;
+            display: flex;
+            gap: 20px;
+        }
+
+        .steps .steps-title h2{
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .steps table{
+            margin-top: 50px;
+        }
+
+        .steps table .icon{
+            align-items: center;
+            display: flex;
+            float: left;
+            height: 150px;
+            justify-content: center;
+            padding-right: 5vw;
+            width: 150px;
+        }
+
+        .steps table .values{
+            align-items: center;
+            border-top: solid #E0E7EA 2px;
+            display: flex;
+            height: 150px;
+        }
+
+        .steps table .values p{
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #293033;
+            margin-top: 30px;
+            padding-top: 50px;
+        }
+
+        .footer h3 {
+            color: #FFFFFF;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .footer p {
+            margin-top: 40px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .ineo img {
+            width: 120px;
+        }
+
+        .social img {
+            margin-left: 10px;
+            width: 40px;
+        }
+
+        .resolve-button{
+            background: #7FE786;
+            border: none;
+            border-radius: 50px;
+            color: #323739;
+            font-size: 30px;
+            font-weight: bolder;
+            height: 79px;
+            margin-top: 100px;
+            padding: 20px 70px;
+            text-decoration: none;
+        }
+
+        .green {
+            color: #7FE786;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                max-width: 90%;
+            }
+
+            .title{
+                gap: 20px;
+            }
+
+            .title svg{
+                width: 50px;
+            }
+
+            .title h1{
+                font-size: 30px;
+            }
+
+            img.logo {
+                max-width: 120px;
+            }
+
+            .logo-container a {
+                color: #323739;
+                font-size: 1rem;
+            }
+
+            .logo-container p {
+                line-height: 1rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section .content .hello{
+                font-size: 24px;
+            }
+            .section .content .intro{
+                font-size: 20px;
+                white-space: wrap;
+            }
+
+            .section .content p {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+
+            .steps .steps-title h2{
+                font-size: 26px;
+            }
+
+            .section p.alert {
+                font-size: 16px;
+                max-width: 90%;
+            }
+
+
+            .footer h3 {
+                display: inline-flex;
+                font-size: 18px;
+                font-weight: 200;
+            }
+
+            .footer p {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+
+            .footer .email {
+                margin-left: 30px;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 60px 0;
+            }
+
+            .ineo img {
+                width: 90px;
+            }
+
+            .social img {
+                margin-left: 10px;
+                width: 30px;
+            }
+        }
+
+        @media (max-width: 512px) {
+            .title svg{
+                width: 40px;
+            }
+
+            .logo-container {
+                padding: 50px 0;
+            }
+
+            .section{
+                padding: 30px 0;
+            }
+
+            .section p.hello{
+                font-size:25px;
+            }
+
+            .steps .steps-title h2{
+                font-size: 23px;
+            }
+
+            .steps table .icon{
+                width: 100px;
+            }
+
+            .steps table .values {
+                max-width: 65%;
+            }
+            .steps table .values p{
+                font-size: 20px;
+            }
+
+            .resolve-button{
+                font-size: 25px;
+                padding: 15px 50px;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="content">
+                <div class="logo-container">
+                    <a href="" target="_blank">
+                        <img src="https://ffmrcta.stripocdn.email/content/guids/CABINET_4360f74755fdbb22fbe9b84bd23bf98e9591e669cc8f96a8239724413141a671/images/image_1.png"
+                            class="logo" alt="Logo Resolve" title="Logo Resolve">
+                    </a>
+                    <p>
+                        <span style="font-size: 16px;">{{data}}</span> <br>
+                        <a href="" target="_blank">visualizar na web</a>
+                    </p>
+                </div>
+                <div class="title">
+                    <svg width="66" height="88" viewBox="0 0 66 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.4706 87H8.52941C4.37129 87 1 83.6516 1 79.5217V8.47826C1 4.34839 4.37129 1 8.52941 1H44.2433C44.2471 1 44.2527 1 44.2565 1H44.2941C44.8965 1 45.4104 1.301 45.7548 1.73848L64.2565 20.1144C64.6988 20.4566 65 20.967 65 21.5652V21.6045C65 21.6082 65 21.6101 65 21.6138V79.5217C65 83.6516 61.6287 87 57.4706 87ZM46.1765 7.321V19.6957H58.6358L46.1765 7.321ZM61.2353 23.4348H44.2941C43.2532 23.4348 42.4118 22.5972 42.4118 21.5652V4.73913H8.52941C6.45129 4.73913 4.76471 6.41426 4.76471 8.47826V79.5217C4.76471 81.5857 6.45129 83.2609 8.52941 83.2609H57.4706C59.5487 83.2609 61.2353 81.5857 61.2353 79.5217V23.4348Z" fill="#293033" stroke="#293033"/>
+                        <path d="M32 33C30.35 33 29 34.35 29 36V54C29 55.65 30.35 57 32 57C33.65 57 35 55.65 35 54V36C35 34.35 33.65 33 32 33Z" fill="#293033"/>
+                        <path d="M32 69C33.6569 69 35 67.6569 35 66C35 64.3431 33.6569 63 32 63C30.3431 63 29 64.3431 29 66C29 67.6569 30.3431 69 32 69Z" fill="#293033"/>
+                    </svg>
+                    <h1>Faltam apenas <span class="bold">24 horas</span>.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <p class="hello">Olá <span class="green">{{name}},</span></p>
+                <p class="intro"><span class="bold">Lembrete urgente</span>: restam apenas <span class="bold">24 horas</span> para o prazo de pagamento da sua dívida.</p>
+
+                <p class="intro">Por que agir agora? Você protege seu crédito,<br>evita restrições financeiras e tem tranquilidade para realizar planos.</p>
+
+                <div class="steps">
+                    <div class="steps-title">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.829 7.74183L13.8064 0.547954C13.6483 0.377608 13.4586 0.241383 13.2484 0.147302C13.0382 0.0532212 12.8117 0.00318729 12.5823 0.000147377C12.3529 -0.00289253 12.1252 0.0411231 11.9127 0.129602C11.7002 0.21808 11.5071 0.349232 11.3448 0.515333C11.1825 0.681433 11.0543 0.879123 10.9678 1.09676C10.8812 1.31439 10.838 1.54757 10.8408 1.78256C10.8436 2.01755 10.8922 2.24959 10.9839 2.46502C11.0755 2.68046 11.2083 2.87492 11.3745 3.03697L15.5258 7.28293H1.7194C1.26339 7.28293 0.82605 7.4685 0.5036 7.79881C0.18115 8.12912 0 8.57712 0 9.04425C0 9.51138 0.18115 9.95938 0.5036 10.2897C0.82605 10.62 1.26339 10.8056 1.7194 10.8056H15.4874L11.3745 15.0253C11.0655 15.3584 10.8958 15.802 10.9016 16.2615C10.9074 16.7209 11.0882 17.1599 11.4055 17.4847C11.7229 17.8094 12.1515 17.9943 12.6001 17.9999C13.0486 18.0054 13.4815 17.8312 13.8064 17.5143L20.829 10.3204C20.9893 10.1573 21.1163 9.96318 21.2027 9.74936C21.2891 9.53553 21.3332 9.30627 21.3325 9.07484C21.3336 9.0603 21.3336 9.04568 21.3325 9.03114C21.3335 9.01659 21.3335 9.00198 21.3325 8.98743C21.3323 8.52032 21.1513 8.07235 20.829 7.74183Z" fill="#7FE786"/>
+                        </svg>
+                        <h2>Queremos ajudar você a resolver<br>essa pendência de forma rápida e eficiente:</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <svg height="110" viewBox="0 0 165 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M60.5714 80.5209C67.074 63.0766 80.2269 48.6198 94.4907 46.3815C121.5 42.143 127.375 100.402 126.818 104.341" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <rect x="91.5026" y="54.2627" width="16.9386" height="29.4584" rx="3" fill="#7FE786"/>
+                                    <path d="M109.558 73.4964L107.563 73.6402L107.585 73.9537L107.703 74.2452L109.558 73.4964ZM104.537 71.8389L102.826 70.8028H102.826L104.537 71.8389ZM101.465 102.653C101.694 103.733 102.756 104.423 103.837 104.193C104.917 103.964 105.607 102.902 105.377 101.821L101.465 102.653ZM124.884 101.886C124.797 102.373 124.703 102.623 124.654 102.722C124.601 102.828 124.677 102.61 125.014 102.453C125.403 102.272 125.738 102.355 125.837 102.394C125.894 102.416 125.813 102.395 125.59 102.188C125.149 101.778 124.545 101.01 123.804 99.8435C123.08 98.7036 122.286 97.2843 121.448 95.6562C118.08 89.1201 114.209 79.6738 111.412 72.7476L107.703 74.2452C110.486 81.1371 114.425 90.7593 117.892 97.4881C118.761 99.1762 119.616 100.71 120.428 101.989C121.223 103.24 122.045 104.354 122.867 105.119C123.277 105.499 123.787 105.889 124.389 106.123C125.033 106.373 125.866 106.468 126.701 106.08C127.484 105.716 127.953 105.07 128.234 104.507C128.518 103.937 128.699 103.276 128.822 102.588L124.884 101.886ZM111.553 73.3526C111.406 71.3255 110.111 69.5606 108.391 68.8253C107.499 68.4435 106.437 68.321 105.377 68.6693C104.309 69.0201 103.445 69.781 102.826 70.8028L106.247 72.875C106.465 72.5151 106.624 72.47 106.625 72.4695C106.634 72.4666 106.689 72.4475 106.819 72.5031C107.145 72.6425 107.523 73.088 107.563 73.6402L111.553 73.3526ZM102.826 70.8028C100.783 74.1761 99.9495 79.6119 99.8285 85.2263C99.7052 90.9456 100.317 97.2528 101.465 102.653L105.377 101.821C104.293 96.7202 103.711 90.7208 103.828 85.3125C103.946 79.7994 104.787 75.2868 106.247 72.875L102.826 70.8028Z" fill="#323739"/>
+                                    <circle cx="96.2899" cy="59.0492" r="1.84115" fill="#FBFCFC"/>
+                                    <path d="M110.421 27.2063C109.946 30.4238 108.27 33.7236 106.002 36.0859C103.71 38.4736 101.113 39.6221 98.8004 39.2804C96.4507 38.9332 94.4066 37.2041 93.0223 34.4679C91.6423 31.7404 91.0663 28.2588 91.5468 25.0065C92.0272 21.7549 93.5829 18.6024 95.6886 16.4039C97.8 14.1993 100.256 13.1417 102.611 13.4896C105.049 13.8499 107.228 15.5344 108.719 18.1197C110.208 20.7007 110.894 24.0073 110.421 27.2063Z" stroke="#323739" stroke-width="4"/>
+                                    <path d="M8.03887 81.643C8.89436 76.878 13.0403 73.4102 17.8815 73.4102H70.39C76.4786 73.4102 81.1541 78.8052 80.2885 84.8319L78.0496 100.42C77.3425 105.343 73.1248 108.998 68.1512 108.998H15.0829C8.85286 108.998 4.13939 103.363 5.24031 97.2307L8.03887 81.643Z" fill="#D7E1E4"/>
+                                    <path d="M17.1357 89.6669C17.265 89.6307 17.3986 89.6123 17.5329 89.6123H69.7325C71.4451 89.6123 71.7788 92.0418 70.1297 92.5036C70.0004 92.5398 69.8668 92.5581 69.7325 92.5581H17.5329C15.8203 92.5581 15.4866 90.1286 17.1357 89.6669Z" fill="#FDFDFD"/>
+                                    <path d="M17.5629 81.0847C17.8215 80.8836 18.1397 80.7744 18.4672 80.7744H36.394C37.7965 80.7744 38.4053 82.549 37.2983 83.41C37.0397 83.6111 36.7215 83.7203 36.394 83.7203H18.4672C17.0648 83.7203 16.4559 81.9457 17.5629 81.0847Z" fill="#FDFDFD"/>
+                                    <path d="M15.6627 98.5038C15.792 98.4676 15.9256 98.4492 16.0598 98.4492H68.2595C69.9721 98.4492 70.3058 100.879 68.6567 101.341C68.5274 101.377 68.3938 101.395 68.2595 101.395H16.0599C14.3473 101.395 14.0136 98.9655 15.6627 98.5038Z" fill="#FDFDFD"/>
+                                </svg>
+                            </td>
+                            <td class="values" style="border: none;"><p><span class="bold">01.</span> Cadastre-se na plataforma Resolve</p></td>
+                        </tr>
+                        <tr>
+                            <td class="icon">
+                                <svg height="100" viewBox="0 0 94 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M47.4489 77.7155C23.1415 77.7155 3.43652 58.0105 3.43652 33.7031" stroke="#D7E1E4" stroke-width="6" stroke-linecap="round"/>
+                                    <circle cx="47.4489" cy="33.7032" r="31.7032" fill="#FBFCFC" stroke="#323739" stroke-width="4"/>
+                                    <ellipse cx="47.4488" cy="33.3062" rx="24.98" ry="25.3765" fill="#7FE786"/>
+                                    <path d="M62.1198 67.4062C68.543 81.5611 82.931 109.783 89.0973 109.433C96.8052 108.995 84.387 87.544 70.2558 73.9729" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M49.1496 20.0451V21.4898C51.1834 22.046 52.8566 23.5774 53.6728 25.6361C54.0605 26.5462 53.6864 27.6153 52.8294 28.027C51.9724 28.4388 50.9657 28.0415 50.578 27.1313C50.5644 27.0952 50.5508 27.0663 50.5372 27.0302C50.0134 25.7155 48.7959 24.8559 47.4491 24.8631C45.8371 24.8631 44.1094 25.8311 44.1094 27.9692C44.1094 28.5254 44.1094 30.2157 47.83 31.1186H47.8845C53.3872 32.5272 54.1898 35.9367 54.1898 37.8292C54.1898 41.0003 52.0744 43.7235 49.1496 44.3303V45.775C49.1496 46.7718 48.3878 47.5809 47.4491 47.5809C46.5105 47.5809 45.7487 46.7718 45.7487 45.775V44.3303C43.7149 43.7741 42.0417 42.2427 41.2254 40.1841C40.8377 39.2739 41.2118 38.2048 42.0689 37.7931C42.9259 37.3814 43.9326 37.7787 44.3203 38.6888C44.3339 38.7249 44.3475 38.7538 44.3611 38.7899C44.8848 40.1046 46.1024 40.9642 47.4491 40.957C49.0612 40.957 50.7888 39.989 50.7888 37.8509C50.7888 37.2947 50.7888 35.6044 47.0682 34.7015H47.0138C41.5315 33.3507 40.7085 29.9557 40.7085 28.0487C40.7085 24.8776 42.8239 22.1544 45.7487 21.5476V20.0451C45.7487 19.0483 46.5105 18.2393 47.4491 18.2393C48.3878 18.2393 49.1496 19.0483 49.1496 20.0451Z" fill="#323739"/>
+                                </svg>
+                            </td>
+                            <td class="values"><p><span class="bold">02.</span> Consulte a pendência</p></td>
+                        </tr>
+                        <tr>
+                            <td class="icon">
+                                <svg height="123" viewBox="0 0 181 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M143.311 78.9529C138.027 71.5826 123.62 56.3414 108.267 54.3389" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M88.2424 96.8922C80.7331 91.7469 68.2174 86.0453 64.8799 80.6219C63.3154 78.0795 64.3237 74.225 64.8799 72.6953" stroke="#D7E1E4" stroke-width="6" stroke-linecap="round"/>
+                                    <rect x="33.2252" y="18.8664" width="76.2656" height="49.3474" rx="8.5" transform="rotate(6.38297 33.2252 18.8664)" fill="#7FE786" stroke="#323739" stroke-width="3"/>
+                                    <path d="M124.538 86.4618C119.81 88.8259 109.018 90.8006 103.678 79.7868C97.0034 66.0196 97.0034 50.5837 84.905 48.4978C72.8066 46.4118 80.3159 64.7681 81.1503 67.6884C81.9847 70.6087 93.2488 103.567 89.0769 119.837" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M39.4672 29.7374C39.8668 29.6003 40.2915 29.5521 40.7117 29.5963L101.44 35.9804C104.527 36.3049 105.014 40.5991 102.078 41.6069C101.678 41.744 101.254 41.7922 100.833 41.748L40.1053 35.3639C37.0178 35.0393 36.5308 30.7452 39.4672 29.7374Z" fill="#FDFDFD"/>
+                                    <rect x="35.2306" y="54.7559" width="15.8531" height="7.50938" rx="3.75469" transform="rotate(6.15707 35.2306 54.7559)" fill="white"/>
+                                </svg>
+                            </td>
+                            <td class="values"><p><span class="bold">03.</span> Efetue o pagamento</p></td>
+                        </tr>
+                    </table>
+
+                    <p style="font-size: 24px; margin-bottom: 70px;">Não deixe para a última hora! Clique no botão abaixo para acessar a Resolve:</p>
+                    <a href="" target="_blank" class="resolve-button">Pagar agora</a>
+                </div>
+
+                <p class="alert" style="margin-top: 90px;">
+                    "Nos termos do artigo 14 da Lei 9.492/97 e do artigo 368 do Provimento nº 149 CN-CNJ, fica V.Sª intimada para PAGAR, ou declarar o motivo de não o fazer, o título/documento abaixo caracterizado."
+                </p>
+                <p class="alert">
+                    "Uma vez acessada a intimação eletrônica, a mesma é considerada entregue (nos termos do artigo 368 do Provimento nº 149 CN-CNJ) e o cartório não procederá à entrega da mesma no endereço físico do devedor."
+                </p>
+                
+                <hr style="border: #D9E6F4 1px solid; margin: 60px 0;">
+                    
+                <p>Conte com a ajuda da Resolve para facilitar essa jornada.</p>
+                <p>Atenciosamente,<br>Equipe Resolve - CENPROT</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <a href="" target="_blank">
+                    <img src="https://stineositeprod01.blob.core.windows.net/emails/logo-white.png" class="logo"
+                        alt="Logo Resolve" title="Logo Resolve">
+                </a>
+                <hr style="border: #333C40 1px solid; margin: 40px 0;">
+                <h3><span class="green" style="margin-right: 10px;">Contato:</span> (11) 3112-0698</h3>
+                <h3><span class="green">Email:</span> <span class="email"
+                        style="word-break: break-all;">consultaprotesto@cartoriosdeprotesto.org.br</span></h3>
+                <p>Resolve é uma iniciativa da CENPROT/IEPTB (Instituto de Estudos de Protesto de Títulos do Brasil),
+                    respaldada pelas Leis Federais nº 13.775/2018 e nº 14.711/2023.</p>
+                <p>Oferecemos soluções confiáveis para negociar, quitar dívidas e cancelar pendências em todo o Brasil,
+                    inclusive protestos.</p>
+                <p>Copyright IPTB-BR - Todos os direitos reservados.</p>
+                <p>
+                    <span class="bold">IEPTB-BR - Seção São Paulo</span><br>
+                    Rua da Quitanda, nº 16, 1º andar, Centro, São Paulo/SP, CEP 01012-001<br>
+                    CNPJ: nº 45.876.117/0001-71<br>
+                </p>
+
+                <div class="icons">
+                    <div class="ineo">
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/ineo.png" alt="Ineo">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/ieptb.png"
+                            style="margin-left: 20px;" alt="Cartórios de Protesto">
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/facebook-white.png"
+                            alt="Facebook">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/instagram-white.png"
+                            alt="Instagram">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/linkedin-white.png"
+                            alt="Linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

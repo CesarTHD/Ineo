@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>2 dias</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #677379;
+            font-family: kanit, geneva, sans-serif;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 840px;
+        }
+
+        .header {
+            background-color: #F4DC6D;
+        }
+
+        .title{
+            display: flex;
+            gap: 43px;
+            align-items: center;
+            padding-bottom: 55px;
+        }
+
+        .title h1{
+            color: #000;
+            font-weight: 100;
+            font-size: 60px;
+            white-space: nowrap;
+        }
+
+        .logo-container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 117px 0;
+            text-align: right;
+        }
+
+        img.logo {
+            max-height: 45px;
+            max-width: 182px;
+        }
+
+        .logo-container a {
+            color: #323739;
+        }
+
+        .section {
+            background-color: #FFFFFF;
+            color: #323739;
+            padding: 40px 0;
+        }
+
+        .section .hello{
+            font-size: 38px;
+            font-weight: 600;
+        }
+
+        .section .content .intro{
+            font-size: 24px;
+        }
+
+        .section .content p{
+            color: #323739;
+            margin-top: 40px;
+        }
+
+        .balloon{
+            background-color: #F2F6FA;
+            border-radius: 20px;
+            margin: 60px 0;
+            padding: 56px 63px;
+        }
+
+        .balloon .item{
+            align-items: center;
+            display: flex;
+            margin: 50px 0;
+        }
+
+        .balloon .item svg{
+            margin-right: 28px;
+            min-width: 30px;
+        }
+
+        .balloon .item p{
+            font-size: 28px;
+            line-height: 30px;
+            margin: 0;
+        }
+
+        .section .alert {
+            color: #858f94;
+            font-size: 19px;
+        }
+
+        .steps{
+            margin-top: 50px;
+        }
+
+        .steps h2{
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .steps table{
+            margin-top: 50px;
+        }
+
+        .steps table .icon{
+            align-items: center;
+            display: flex;
+            float: left;
+            height: 150px;
+            justify-content: center;
+            padding-right: 5vw;
+            width: 150px;
+        }
+
+        .steps table .values{
+            align-items: center;
+            border-top: solid #E0E7EA 2px;
+            display: flex;
+            height: 150px;
+        }
+
+        .steps table .values p{
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #293033;
+            margin-top: 30px;
+            padding-top: 50px;
+        }
+
+        .footer h3 {
+            color: #FFFFFF;
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .footer p {
+            margin-top: 40px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .ineo img {
+            width: 120px;
+        }
+
+        .social img {
+            margin-left: 10px;
+            width: 40px;
+        }
+
+        .resolve-button{
+            background: #7FE786;
+            border: none;
+            border-radius: 50px;
+            color: #323739;
+            font-size: 30px;
+            font-weight: bolder;
+            height: 79px;
+            margin-top: 100px;
+            padding: 20px 70px;
+            text-decoration: none;
+        }
+
+        .green {
+            color: #7FE786;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                max-width: 90%;
+            }
+
+            .title{
+                gap: 20px;
+            }
+
+            .title svg{
+                width: 50px;
+            }
+
+            .title h1{
+                font-size: 30px;
+            }
+
+            img.logo {
+                max-width: 120px;
+            }
+
+            .logo-container a {
+                color: #323739;
+                font-size: 1rem;
+            }
+
+            .logo-container p {
+                line-height: 1rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section .content .hello{
+                font-size: 24px;
+            }
+            .section .content .intro{
+                font-size: 20px;
+                white-space: wrap;
+            }
+
+            .section .content p {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+            .section p.alert {
+                font-size: 16px;
+                max-width: 90%;
+            }
+
+    
+            .balloon .item{
+                margin: 40px 0;
+            }
+
+            .balloon h2{
+                font-size: 26px;
+            }
+
+            .balloon .item p{
+                font-size: 22px;
+                margin: 0;
+            }
+
+
+            .footer h3 {
+                display: inline-flex;
+                font-size: 18px;
+                font-weight: 200;
+            }
+
+            .footer p {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+
+            .footer .email {
+                margin-left: 30px;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 60px 0;
+            }
+
+            .ineo img {
+                width: 90px;
+            }
+
+            .social img {
+                margin-left: 10px;
+                width: 30px;
+            }
+        }
+
+        @media (max-width: 512px) {
+            .title svg{
+                width: 40px;
+            }
+
+            .logo-container {
+                padding: 50px 0;
+            }
+
+            .section{
+                padding: 30px 0;
+            }
+
+            .section p.hello{
+                font-size:25px;
+            }
+            
+            .balloon{
+                padding: 30px;
+            }
+            
+            .balloon h2{
+                font-size: 22px;
+            }
+
+            .balloon .item {
+                margin: 25px 0;
+            }
+            .balloon .item svg{
+                margin-right: 15px;
+            }
+
+            .balloon .item p{
+                font-size: 19px;
+                line-height: 24px;
+            }
+
+
+            .steps h2{
+                font-size: 25px;
+            }
+
+            .steps table .icon{
+                width: 100px;
+            }
+
+            .steps table .values {
+                max-width: 65%;
+            }
+            .steps table .values p{
+                font-size: 20px;
+            }
+
+            .resolve-button{
+                font-size: 25px;
+                padding: 15px 50px;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="content">
+                <div class="logo-container">
+                    <a href="" target="_blank">
+                        <img src="https://ffmrcta.stripocdn.email/content/guids/CABINET_4360f74755fdbb22fbe9b84bd23bf98e9591e669cc8f96a8239724413141a671/images/image_1.png"
+                        class="logo" alt="Logo Resolve" title="Logo Resolve">
+                    </a>
+                    <p>
+                        <span style="font-size: 16px;">{{data}}</span> <br>
+                        <a href="" target="_blank">visualizar na web</a>
+                    </p>
+                </div>
+                <div class="title">
+                    <svg width="66" height="88" viewBox="0 0 66 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.4706 87H8.52941C4.37129 87 1 83.6516 1 79.5217V8.47826C1 4.34839 4.37129 1 8.52941 1H44.2433C44.2471 1 44.2527 1 44.2565 1H44.2941C44.8965 1 45.4104 1.301 45.7548 1.73848L64.2565 20.1144C64.6988 20.4566 65 20.967 65 21.5652V21.6045C65 21.6082 65 21.6101 65 21.6138V79.5217C65 83.6516 61.6287 87 57.4706 87ZM46.1765 7.321V19.6957H58.6358L46.1765 7.321ZM61.2353 23.4348H44.2941C43.2532 23.4348 42.4118 22.5972 42.4118 21.5652V4.73913H8.52941C6.45129 4.73913 4.76471 6.41426 4.76471 8.47826V79.5217C4.76471 81.5857 6.45129 83.2609 8.52941 83.2609H57.4706C59.5487 83.2609 61.2353 81.5857 61.2353 79.5217V23.4348Z" fill="#293033" stroke="#293033"/>
+                        <path d="M32 33C30.35 33 29 34.35 29 36V54C29 55.65 30.35 57 32 57C33.65 57 35 55.65 35 54V36C35 34.35 33.65 33 32 33Z" fill="#293033"/>
+                        <path d="M32 69C33.6569 69 35 67.6569 35 66C35 64.3431 33.6569 63 32 63C30.3431 63 29 64.3431 29 66C29 67.6569 30.3431 69 32 69Z" fill="#293033"/>
+                    </svg>
+                    <h1>Faltam apenas <span class="bold">2 dias</span>.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                <p class="hello">Olá <span class="green">{{name}},</span></p>
+                <p class="intro">Queremos lembrar a importância de regularizar o seu título em aberto. <br>
+                Faltam apenas <span class="bold">2 dias</span> para evitar o protesto sobre essa pendência em seu nome.</p>
+                
+                <div class="balloon">
+                    <h2>Benefícios <span style="font-weight: 100;">de resolver agora:</span></h2>
+                    <div class="item">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.829 7.74183L13.8064 0.547954C13.6483 0.377608 13.4586 0.241383 13.2484 0.147302C13.0382 0.0532212 12.8117 0.00318729 12.5823 0.000147377C12.3529 -0.00289253 12.1252 0.0411231 11.9127 0.129602C11.7002 0.21808 11.5071 0.349232 11.3448 0.515333C11.1825 0.681433 11.0543 0.879123 10.9678 1.09676C10.8812 1.31439 10.838 1.54757 10.8408 1.78256C10.8436 2.01755 10.8922 2.24959 10.9839 2.46502C11.0755 2.68046 11.2083 2.87492 11.3745 3.03697L15.5258 7.28293H1.7194C1.26339 7.28293 0.82605 7.4685 0.5036 7.79881C0.18115 8.12912 0 8.57712 0 9.04425C0 9.51138 0.18115 9.95938 0.5036 10.2897C0.82605 10.62 1.26339 10.8056 1.7194 10.8056H15.4874L11.3745 15.0253C11.0655 15.3584 10.8958 15.802 10.9016 16.2615C10.9074 16.7209 11.0882 17.1599 11.4055 17.4847C11.7229 17.8094 12.1515 17.9943 12.6001 17.9999C13.0486 18.0054 13.4815 17.8312 13.8064 17.5143L20.829 10.3204C20.9893 10.1573 21.1163 9.96318 21.2027 9.74936C21.2891 9.53553 21.3332 9.30627 21.3325 9.07484C21.3336 9.0603 21.3336 9.04568 21.3325 9.03114C21.3335 9.01659 21.3335 9.00198 21.3325 8.98743C21.3323 8.52032 21.1513 8.07235 20.829 7.74183Z" fill="#7FE786"/>
+                        </svg>
+                        <p>Acesso facilitado a crédito, empréstimos e financiamentos</p>
+                    </div>
+                    <div class="item">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.829 7.74183L13.8064 0.547954C13.6483 0.377608 13.4586 0.241383 13.2484 0.147302C13.0382 0.0532212 12.8117 0.00318729 12.5823 0.000147377C12.3529 -0.00289253 12.1252 0.0411231 11.9127 0.129602C11.7002 0.21808 11.5071 0.349232 11.3448 0.515333C11.1825 0.681433 11.0543 0.879123 10.9678 1.09676C10.8812 1.31439 10.838 1.54757 10.8408 1.78256C10.8436 2.01755 10.8922 2.24959 10.9839 2.46502C11.0755 2.68046 11.2083 2.87492 11.3745 3.03697L15.5258 7.28293H1.7194C1.26339 7.28293 0.82605 7.4685 0.5036 7.79881C0.18115 8.12912 0 8.57712 0 9.04425C0 9.51138 0.18115 9.95938 0.5036 10.2897C0.82605 10.62 1.26339 10.8056 1.7194 10.8056H15.4874L11.3745 15.0253C11.0655 15.3584 10.8958 15.802 10.9016 16.2615C10.9074 16.7209 11.0882 17.1599 11.4055 17.4847C11.7229 17.8094 12.1515 17.9943 12.6001 17.9999C13.0486 18.0054 13.4815 17.8312 13.8064 17.5143L20.829 10.3204C20.9893 10.1573 21.1163 9.96318 21.2027 9.74936C21.2891 9.53553 21.3332 9.30627 21.3325 9.07484C21.3336 9.0603 21.3336 9.04568 21.3325 9.03114C21.3335 9.01659 21.3335 9.00198 21.3325 8.98743C21.3323 8.52032 21.1513 8.07235 20.829 7.74183Z" fill="#7FE786"/>
+                        </svg>
+                        <p>Liberdade para comprar e realizar sonhos</p>
+                    </div>
+                    <div class="item">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.829 7.74183L13.8064 0.547954C13.6483 0.377608 13.4586 0.241383 13.2484 0.147302C13.0382 0.0532212 12.8117 0.00318729 12.5823 0.000147377C12.3529 -0.00289253 12.1252 0.0411231 11.9127 0.129602C11.7002 0.21808 11.5071 0.349232 11.3448 0.515333C11.1825 0.681433 11.0543 0.879123 10.9678 1.09676C10.8812 1.31439 10.838 1.54757 10.8408 1.78256C10.8436 2.01755 10.8922 2.24959 10.9839 2.46502C11.0755 2.68046 11.2083 2.87492 11.3745 3.03697L15.5258 7.28293H1.7194C1.26339 7.28293 0.82605 7.4685 0.5036 7.79881C0.18115 8.12912 0 8.57712 0 9.04425C0 9.51138 0.18115 9.95938 0.5036 10.2897C0.82605 10.62 1.26339 10.8056 1.7194 10.8056H15.4874L11.3745 15.0253C11.0655 15.3584 10.8958 15.802 10.9016 16.2615C10.9074 16.7209 11.0882 17.1599 11.4055 17.4847C11.7229 17.8094 12.1515 17.9943 12.6001 17.9999C13.0486 18.0054 13.4815 17.8312 13.8064 17.5143L20.829 10.3204C20.9893 10.1573 21.1163 9.96318 21.2027 9.74936C21.2891 9.53553 21.3332 9.30627 21.3325 9.07484C21.3336 9.0603 21.3336 9.04568 21.3325 9.03114C21.3335 9.01659 21.3335 9.00198 21.3325 8.98743C21.3323 8.52032 21.1513 8.07235 20.829 7.74183Z" fill="#7FE786"/>
+                        </svg>
+                        <p>Preservar a reputação no mercado e o score</p>
+                    </div>
+                </div>
+
+                <div class="steps">
+                    <h2>O que você precisa fazer?</h2>
+                    <table>
+                        <tr>
+                            <td class="icon">
+                                <svg width="95" height="82" viewBox="0 0 95 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.5 75L36 40.5V38L66 57.5L56 64.5L62 75L53 80L47.5 69.5L36.5 75Z" fill="#7FE786"/>
+                                    <path d="M7.19378 0C3.23438 0 0 3.25093 0 7.21617V63.842C0 67.8073 3.23438 71.0486 7.19378 71.0486H34.5167L34.5774 75.5811C34.5802 75.8669 34.6578 76.147 34.8023 76.3935C34.9469 76.6401 35.1535 76.8445 35.4016 76.9864C35.6496 77.1284 35.9305 77.203 36.2163 77.2028C36.5021 77.2026 36.7829 77.1276 37.0307 76.9853L46.6299 71.458L52.0229 80.7693C52.2413 81.1403 52.597 81.4104 53.013 81.5212C53.4291 81.6319 53.872 81.5744 54.2459 81.3611L62.4921 76.6207C62.8665 76.4022 63.1391 76.0442 63.25 75.625C63.3609 75.2059 63.3012 74.7599 63.0838 74.3848L61.155 71.0486H87.8062C91.7656 71.0486 95 67.8073 95 63.842V7.21617C95 3.25093 91.7656 0 87.8062 0H7.19378ZM7.19378 3.27545H87.8064C90 3.27545 91.7247 5.00109 91.7247 7.21617V17.0457H3.27863V7.21617C3.27863 5.00109 5.00012 3.27545 7.19378 3.27545ZM10.7923 7.96148C10.2127 7.96357 9.6574 8.19576 9.24755 8.60741C8.8377 9.01907 8.60651 9.57679 8.60439 10.159C8.60336 10.4486 8.65913 10.7356 8.76852 11.0036C8.87791 11.2716 9.03877 11.5153 9.24194 11.7209C9.4451 11.9264 9.68658 12.0897 9.95259 12.2015C10.2186 12.3133 10.5039 12.3714 10.7923 12.3724C11.082 12.3735 11.369 12.317 11.6369 12.2061C11.9047 12.0953 12.1481 11.9323 12.353 11.7265C12.5578 11.5208 12.7201 11.2764 12.8305 11.0073C12.9409 10.7383 12.9972 10.45 12.9961 10.159C12.9951 9.86933 12.9373 9.58273 12.8259 9.31554C12.7146 9.04835 12.552 8.8058 12.3473 8.60174C12.1427 8.39769 11.9 8.23611 11.6332 8.12626C11.3664 8.0164 11.0806 7.96041 10.7923 7.96148ZM19.2335 7.96148C18.6539 7.96357 18.0987 8.19576 17.6888 8.60741C17.279 9.01907 17.0478 9.57679 17.0457 10.159C17.0446 10.4486 17.1004 10.7356 17.2098 11.0036C17.3192 11.2716 17.48 11.5153 17.6832 11.7209C17.8864 11.9264 18.1278 12.0897 18.3939 12.2015C18.6599 12.3133 18.9452 12.3714 19.2335 12.3724C19.5235 12.3739 19.8109 12.3177 20.0791 12.2071C20.3473 12.0964 20.5911 11.9335 20.7963 11.7277C21.0015 11.5219 21.1641 11.2773 21.2747 11.0081C21.3853 10.7388 21.4416 10.4502 21.4406 10.159C21.4396 9.86906 21.3816 9.5822 21.2701 9.3148C21.1586 9.0474 20.9956 8.80471 20.7907 8.60061C20.5857 8.39651 20.3426 8.235 20.0754 8.12533C19.8083 8.01567 19.5222 7.95999 19.2335 7.96148ZM27.678 7.96148C27.0984 7.96357 26.5431 8.19575 26.1333 8.60741C25.7234 9.01906 25.4922 9.57679 25.4901 10.159C25.4891 10.4486 25.5448 10.7356 25.6542 11.0036C25.7636 11.2716 25.9245 11.5153 26.1277 11.7209C26.3308 11.9264 26.5723 12.0897 26.8383 12.2015C27.1043 12.3133 27.3896 12.3714 27.678 12.3724C27.9677 12.3735 28.2547 12.317 28.5226 12.2061C28.7905 12.0953 29.0338 11.9323 29.2387 11.7265C29.4435 11.5208 29.6058 11.2764 29.7162 11.0073C29.8266 10.7383 29.8829 10.45 29.8819 10.159C29.8808 9.86933 29.823 9.58273 29.7117 9.31554C29.6003 9.04835 29.4377 8.8058 29.233 8.60174C29.0284 8.39769 28.7857 8.23611 28.5189 8.12626C28.2521 8.0164 27.9664 7.96041 27.678 7.96148ZM3.27863 20.3211H91.7247V63.842C91.7247 66.0572 90 67.7828 87.8064 67.7828H59.2679L57.7038 65.0767L68.704 58.7401C68.9521 58.598 69.1587 58.3934 69.3032 58.1466C69.4477 57.8999 69.5251 57.6196 69.5277 57.3336C69.5303 57.0477 69.4579 56.766 69.3178 56.5167C69.1778 56.2674 68.9749 56.0591 68.7293 55.9125L36.5604 36.8357C36.3103 36.6866 36.0249 36.6068 35.7337 36.6046C35.4424 36.6024 35.1559 36.6779 34.9035 36.8234C34.6509 36.9685 34.4415 37.1784 34.297 37.4314C34.1525 37.6844 34.0781 37.9714 34.0815 38.2627L34.4749 67.7832H7.19355C4.99989 67.7832 3.2784 66.0576 3.2784 63.8424L3.27863 20.3211ZM37.3923 41.138L64.6417 57.3039L54.6459 63.0584C54.4577 63.1655 54.2926 63.3089 54.1602 63.4802C54.0278 63.6515 53.9306 63.8474 53.8744 64.0565C53.8182 64.2657 53.804 64.4838 53.8326 64.6985C53.8613 64.9131 53.9322 65.1199 54.0413 65.307L59.431 74.6023L54.0285 77.7082L48.6484 68.4001C48.4321 68.0234 48.075 67.7481 47.6557 67.6347C47.2364 67.5213 46.7892 67.5791 46.4125 67.7953L37.8177 72.7533L37.3923 41.138Z" fill="#323739"/>
+                                    <mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="95" height="82">
+                                    <path d="M7.19378 0C3.23438 0 0 3.25093 0 7.21617V63.842C0 67.8073 3.23438 71.0486 7.19378 71.0486H34.5167L34.5774 75.5811C34.5802 75.8669 34.6578 76.147 34.8023 76.3935C34.9469 76.6401 35.1535 76.8445 35.4016 76.9864C35.6496 77.1284 35.9305 77.203 36.2163 77.2028C36.5021 77.2026 36.7829 77.1276 37.0307 76.9853L46.6299 71.458L52.0229 80.7693C52.2413 81.1403 52.597 81.4104 53.013 81.5212C53.4291 81.6319 53.872 81.5744 54.2459 81.3611L62.4921 76.6207C62.8665 76.4022 63.1391 76.0442 63.25 75.625C63.3609 75.2059 63.3012 74.7599 63.0838 74.3848L61.155 71.0486H87.8062C91.7656 71.0486 95 67.8073 95 63.842V7.21617C95 3.25093 91.7656 0 87.8062 0H7.19378ZM7.19378 3.27545H87.8064C90 3.27545 91.7247 5.00109 91.7247 7.21617V17.0457H3.27863V7.21617C3.27863 5.00109 5.00012 3.27545 7.19378 3.27545ZM10.7923 7.96148C10.2127 7.96357 9.6574 8.19576 9.24755 8.60741C8.8377 9.01907 8.60651 9.57679 8.60439 10.159C8.60336 10.4486 8.65913 10.7356 8.76852 11.0036C8.87791 11.2716 9.03877 11.5153 9.24194 11.7209C9.4451 11.9264 9.68658 12.0897 9.95259 12.2015C10.2186 12.3133 10.5039 12.3714 10.7923 12.3724C11.082 12.3735 11.369 12.317 11.6369 12.2061C11.9047 12.0953 12.1481 11.9323 12.353 11.7265C12.5578 11.5208 12.7201 11.2764 12.8305 11.0073C12.9409 10.7383 12.9972 10.45 12.9961 10.159C12.9951 9.86933 12.9373 9.58273 12.8259 9.31554C12.7146 9.04835 12.552 8.8058 12.3473 8.60174C12.1427 8.39769 11.9 8.23611 11.6332 8.12626C11.3664 8.0164 11.0806 7.96041 10.7923 7.96148ZM19.2335 7.96148C18.6539 7.96357 18.0987 8.19576 17.6888 8.60741C17.279 9.01907 17.0478 9.57679 17.0457 10.159C17.0446 10.4486 17.1004 10.7356 17.2098 11.0036C17.3192 11.2716 17.48 11.5153 17.6832 11.7209C17.8864 11.9264 18.1278 12.0897 18.3939 12.2015C18.6599 12.3133 18.9452 12.3714 19.2335 12.3724C19.5235 12.3739 19.8109 12.3177 20.0791 12.2071C20.3473 12.0964 20.5911 11.9335 20.7963 11.7277C21.0015 11.5219 21.1641 11.2773 21.2747 11.0081C21.3853 10.7388 21.4416 10.4502 21.4406 10.159C21.4396 9.86906 21.3816 9.5822 21.2701 9.3148C21.1586 9.0474 20.9956 8.80471 20.7907 8.60061C20.5857 8.39651 20.3426 8.235 20.0754 8.12533C19.8083 8.01567 19.5222 7.95999 19.2335 7.96148ZM27.678 7.96148C27.0984 7.96357 26.5431 8.19575 26.1333 8.60741C25.7234 9.01906 25.4922 9.57679 25.4901 10.159C25.4891 10.4486 25.5448 10.7356 25.6542 11.0036C25.7636 11.2716 25.9245 11.5153 26.1277 11.7209C26.3308 11.9264 26.5723 12.0897 26.8383 12.2015C27.1043 12.3133 27.3896 12.3714 27.678 12.3724C27.9677 12.3735 28.2547 12.317 28.5226 12.2061C28.7905 12.0953 29.0338 11.9323 29.2387 11.7265C29.4435 11.5208 29.6058 11.2764 29.7162 11.0073C29.8266 10.7383 29.8829 10.45 29.8819 10.159C29.8808 9.86933 29.823 9.58273 29.7117 9.31554C29.6003 9.04835 29.4377 8.8058 29.233 8.60174C29.0284 8.39769 28.7857 8.23611 28.5189 8.12626C28.2521 8.0164 27.9664 7.96041 27.678 7.96148ZM3.27863 20.3211H91.7247V63.842C91.7247 66.0572 90 67.7828 87.8064 67.7828H59.2679L57.7038 65.0767L68.704 58.7401C68.9521 58.598 69.1587 58.3934 69.3032 58.1466C69.4477 57.8999 69.5251 57.6196 69.5277 57.3336C69.5303 57.0477 69.4579 56.766 69.3178 56.5167C69.1778 56.2674 68.9749 56.0591 68.7293 55.9125L36.5604 36.8357C36.3103 36.6866 36.0249 36.6068 35.7337 36.6046C35.4424 36.6024 35.1559 36.6779 34.9035 36.8234C34.6509 36.9685 34.4415 37.1784 34.297 37.4314C34.1525 37.6844 34.0781 37.9714 34.0815 38.2627L34.4749 67.7832H7.19355C4.99989 67.7832 3.2784 66.0576 3.2784 63.8424L3.27863 20.3211ZM37.3923 41.138L64.6417 57.3039L54.6459 63.0584C54.4577 63.1655 54.2926 63.3089 54.1602 63.4802C54.0278 63.6515 53.9306 63.8474 53.8744 64.0565C53.8182 64.2657 53.804 64.4838 53.8326 64.6985C53.8613 64.9131 53.9322 65.1199 54.0413 65.307L59.431 74.6023L54.0285 77.7082L48.6484 68.4001C48.4321 68.0234 48.075 67.7481 47.6557 67.6347C47.2364 67.5213 46.7892 67.5791 46.4125 67.7953L37.8177 72.7533L37.3923 41.138Z" fill="#323739"/>
+                                    </mask>
+                                    <g mask="url(#mask0_0_1)">
+                                    <path d="M73 54.5V63.5L67.5 63L59 67.5L61 71L66 77.5L49 86.5L34.5 77.5V68L33.5 32L73 54.5Z" fill="#323739"/>
+                                    </g>
+                                </svg>
+                            </td>
+                            <td class="values" style="border: none;"><p><span class="bold">01.</span> Acesse a plataforma Resolve</p></td>
+                        </tr>
+                        <tr>
+                            <td class="icon">
+                                <svg height="100" viewBox="0 0 94 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M47.4489 77.7155C23.1415 77.7155 3.43652 58.0105 3.43652 33.7031" stroke="#D7E1E4" stroke-width="6" stroke-linecap="round"/>
+                                    <circle cx="47.4489" cy="33.7032" r="31.7032" fill="#FBFCFC" stroke="#323739" stroke-width="4"/>
+                                    <ellipse cx="47.4488" cy="33.3062" rx="24.98" ry="25.3765" fill="#7FE786"/>
+                                    <path d="M62.1198 67.4062C68.543 81.5611 82.931 109.783 89.0973 109.433C96.8052 108.995 84.387 87.544 70.2558 73.9729" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M49.1496 20.0451V21.4898C51.1834 22.046 52.8566 23.5774 53.6728 25.6361C54.0605 26.5462 53.6864 27.6153 52.8294 28.027C51.9724 28.4388 50.9657 28.0415 50.578 27.1313C50.5644 27.0952 50.5508 27.0663 50.5372 27.0302C50.0134 25.7155 48.7959 24.8559 47.4491 24.8631C45.8371 24.8631 44.1094 25.8311 44.1094 27.9692C44.1094 28.5254 44.1094 30.2157 47.83 31.1186H47.8845C53.3872 32.5272 54.1898 35.9367 54.1898 37.8292C54.1898 41.0003 52.0744 43.7235 49.1496 44.3303V45.775C49.1496 46.7718 48.3878 47.5809 47.4491 47.5809C46.5105 47.5809 45.7487 46.7718 45.7487 45.775V44.3303C43.7149 43.7741 42.0417 42.2427 41.2254 40.1841C40.8377 39.2739 41.2118 38.2048 42.0689 37.7931C42.9259 37.3814 43.9326 37.7787 44.3203 38.6888C44.3339 38.7249 44.3475 38.7538 44.3611 38.7899C44.8848 40.1046 46.1024 40.9642 47.4491 40.957C49.0612 40.957 50.7888 39.989 50.7888 37.8509C50.7888 37.2947 50.7888 35.6044 47.0682 34.7015H47.0138C41.5315 33.3507 40.7085 29.9557 40.7085 28.0487C40.7085 24.8776 42.8239 22.1544 45.7487 21.5476V20.0451C45.7487 19.0483 46.5105 18.2393 47.4491 18.2393C48.3878 18.2393 49.1496 19.0483 49.1496 20.0451Z" fill="#323739"/>
+                                </svg>
+                            </td>
+                            <td class="values"><p><span class="bold">02.</span> Consulte a pendência</p></td>
+                        </tr>
+                        <tr>
+                            <td class="icon">
+                                <svg height="123" viewBox="0 0 181 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M143.311 78.9529C138.027 71.5826 123.62 56.3414 108.267 54.3389" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M88.2424 96.8922C80.7331 91.7469 68.2174 86.0453 64.8799 80.6219C63.3154 78.0795 64.3237 74.225 64.8799 72.6953" stroke="#D7E1E4" stroke-width="6" stroke-linecap="round"/>
+                                    <rect x="33.2252" y="18.8664" width="76.2656" height="49.3474" rx="8.5" transform="rotate(6.38297 33.2252 18.8664)" fill="#7FE786" stroke="#323739" stroke-width="3"/>
+                                    <path d="M124.538 86.4618C119.81 88.8259 109.018 90.8006 103.678 79.7868C97.0034 66.0196 97.0034 50.5837 84.905 48.4978C72.8066 46.4118 80.3159 64.7681 81.1503 67.6884C81.9847 70.6087 93.2488 103.567 89.0769 119.837" stroke="#323739" stroke-width="4" stroke-linecap="round"/>
+                                    <path d="M39.4672 29.7374C39.8668 29.6003 40.2915 29.5521 40.7117 29.5963L101.44 35.9804C104.527 36.3049 105.014 40.5991 102.078 41.6069C101.678 41.744 101.254 41.7922 100.833 41.748L40.1053 35.3639C37.0178 35.0393 36.5308 30.7452 39.4672 29.7374Z" fill="#FDFDFD"/>
+                                    <rect x="35.2306" y="54.7559" width="15.8531" height="7.50938" rx="3.75469" transform="rotate(6.15707 35.2306 54.7559)" fill="white"/>
+                                </svg>
+                            </td>
+                            <td class="values"><p><span class="bold">03.</span> Escolha a melhor opção<br>de pagamento para você</p></td>
+                        </tr>
+                    </table>
+
+                    <p style="font-size: 24px; margin-bottom: 70px;">Acesse a plataforma e garanta sua tranquilidade financeira:</p>
+                    <a href="" target="_blank" class="resolve-button">Resolve agora</a>
+                </div>
+
+                <p class="alert" style="margin-top: 90px;">
+                    "Nos termos do artigo 14 da Lei 9.492/97 e do artigo 368 do Provimento nº 149 CN-CNJ, fica V.Sª intimada para PAGAR, ou declarar o motivo de não o fazer, o título/documento abaixo caracterizado."
+                </p>
+                <p class="alert">
+                    "Uma vez acessada a intimação eletrônica, a mesma é considerada entregue (nos termos do artigo 368 do Provimento nº 149 CN-CNJ) e o cartório não procederá à entrega da mesma no endereço físico do devedor."
+                </p>
+                
+                <hr style="border: #D9E6F4 1px solid; margin: 60px 0;">
+                    
+                <p>Estamos aqui para ajudar você em cada passo nesse caminho.</p>
+                <p>Atenciosamente,<br>Equipe Resolve - CENPROT</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <a href="" target="_blank">
+                    <img src="https://stineositeprod01.blob.core.windows.net/emails/logo-white.png" class="logo"
+                        alt="Logo Resolve" title="Logo Resolve">
+                </a>
+                <hr style="border: #333C40 1px solid; margin: 40px 0;">
+                <h3><span class="green" style="margin-right: 10px;">Contato:</span> (11) 3112-0698</h3>
+                <h3><span class="green">Email:</span> <span class="email"
+                        style="word-break: break-all;">consultaprotesto@cartoriosdeprotesto.org.br</span></h3>
+                <p>Resolve é uma iniciativa da CENPROT/IEPTB (Instituto de Estudos de Protesto de Títulos do Brasil),
+                    respaldada pelas Leis Federais nº 13.775/2018 e nº 14.711/2023.</p>
+                <p>Oferecemos soluções confiáveis para negociar, quitar dívidas e cancelar pendências em todo o Brasil,
+                    inclusive protestos.</p>
+                <p>Copyright IPTB-BR - Todos os direitos reservados.</p>
+                <p>
+                    <span class="bold">IEPTB-BR - Seção São Paulo</span><br>
+                    Rua da Quitanda, nº 16, 1º andar, Centro, São Paulo/SP, CEP 01012-001<br>
+                    CNPJ: nº 45.876.117/0001-71<br>
+                </p>
+
+                <div class="icons">
+                    <div class="ineo">
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/ineo.png" alt="Ineo">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/ieptb.png"
+                            style="margin-left: 20px;" alt="Cartórios de Protesto">
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/facebook-white.png"
+                            alt="Facebook">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/instagram-white.png"
+                            alt="Instagram">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://stineositeprod01.blob.core.windows.net/emails/linkedin-white.png"
+                            alt="Linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

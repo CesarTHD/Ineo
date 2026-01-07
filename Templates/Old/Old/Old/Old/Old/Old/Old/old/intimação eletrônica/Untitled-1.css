@@ -1,0 +1,82 @@
+a[x-apple-data-detectors=true] {
+	color: inherit !important;
+	text-decoration: inherit !important;
+}
+
+@media screen and (max-width: 500px) {
+	.fs-22 {
+		font-size: 22px !important;
+	}
+}
+
+:root {
+	color-scheme: light dark;
+	supported-color-schemes: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+
+	body,
+	center,
+	table,
+	.darkmode-bg {
+		background: #2E3437 !important;
+		color: #ffffff !important;
+	}
+
+	.darkmode-transparent {
+		background-color: transparent !important;
+	}
+
+	[data-ogsc] body,
+	center,
+	table {
+		background: #293033 !important;
+		color: #ffffff !important;
+	}
+
+	[data-ogsc] body,
+	.bg-dark {
+		background-color: #333A3D !important;
+	}
+
+	[data-ogsc] body,
+	.dark-green {
+		color: #7FE786 !important;
+	}
+
+	[data-ogsc] body,
+	h1.dark-white,
+	h2.dark-white,
+	p.dark-white {
+		color: #EDF0F2 !important;
+	}
+
+	[data-ogsc] body,
+	p.dark-gray {
+		color: #CED3D6 !important;
+	}
+
+	[data-ogsc] body,
+	hr.dark-separate {
+		border-color: #293033 !important;
+	}
+
+	[data-ogsc] .darkmode-transparent {
+		background-color: transparent !important;
+	}
+
+	[data-ogsc] body,
+	.light-img {
+		display: none !important;
+	}
+
+	[data-ogsc] body,
+	.dark-img {
+		display: block !important;
+	}
+}
+
+.dark-img {
+	display: none;
+}
